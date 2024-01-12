@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+
+  background: var(--color-primary);
+  color: var(--color-foreground);
+
+  font-size: 2rem;
+
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+.list {
+  display: grid;
+  row-gap: 1rem;
+
+  text-align: left;
+}
+
+.list-item {
+  display: flex;
+
+  list-style: none !important;
+
+  padding: 0.5rem;
+}

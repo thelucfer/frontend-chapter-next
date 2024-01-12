@@ -1,9 +1,16 @@
 .content {
   background: var(--color-surface);
   border-radius: 0.5rem;
-  padding: 5rem;
 
-  margin: 5rem;
+  margin: 3rem 5rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100dvw;
+  max-height: 60rem;
+  padding: 2rem;
+  overflow: hidden;
 
   & h1,
   & h2,
@@ -12,16 +19,17 @@
   & h5,
   & h6 {
     font-family: var(--font-secondary);
-    font-weight: 700;
-    margin-block: 1rem;
+    font-weight: 500;
+    margin-block: 0.5rem;
   }
 
   & h1 {
     font-size: 4.5rem;
+    font-weight: 700;
   }
 
   & h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   & h3 {
@@ -47,11 +55,11 @@
 
   & ul {
     margin-block: 1rem;
-    padding-inline-start: 1rem;
+    padding: 2rem;
   }
 
   & li {
-    list-style: disc;
+    list-style: none;
   }
 
   & pre {
@@ -59,6 +67,14 @@
     border-radius: 0.5rem;
     width: fit-content;
     margin-block: 1rem;
+
+    background: var(--color-background);
+
+    font-size: 1.5rem;
+  }
+
+  & hr {
+    padding-block: 1rem;
   }
 }
 
