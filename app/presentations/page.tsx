@@ -1,12 +1,15 @@
-import p from '@/lib/metadata/presentations.json';
+import { sql } from '@vercel/postgres';
 import { Presentation } from '@/lib/types';
 import { PresentationCard } from './_components/PresentationCard';
 import styles from './presentation.module.css';
 
-export default function PresentationPage() {
+export default async function PresentationPage() {
+  const { rows }: { rows: Array<Presentation> } =
+    await sql`SELECT * from presentations`;
+
   return (
     <div className={styles.wrapper}>
-      {(p.presentations satisfies Array<Presentation>).map((presentation) => (
+      {rows.map((presentation) => (
         <PresentationCard key={presentation.slug} presentation={presentation} />
       ))}
     </div>
