@@ -1,0 +1,24 @@
+{
+  "presentations": [
+    {
+      "title": "Frontend Chapter - An introduction",
+      "author": "Lucas Ferreira",
+      "github": "thelucfer",
+      "date": "2024-01-12",
+      "slug": "frontend-chapter-an-introduction",
+      "description": "An introduction to the Frontend Chapter",
+      "tags": ["meta", "chapter", "introduction"],
+      "length": 5
+    },
+    {
+      "title": "What was frontend like in 2023?",
+      "author": "Lucas Ferreira",
+      "github": "thelucfer",
+      "date": "2024-01-12",
+      "slug": "what-was-frontend-like-in-2023",
+      "description": "A retrospective on the year 2023",
+      "tags": ["retrospective", "2023", "react", "svelte", "rsc"],
+      "length": 5
+    }
+  ]
+}

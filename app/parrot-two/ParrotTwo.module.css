@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+.parrot {
+  max-height: 50rem;
+  width: 50rem;
+}
